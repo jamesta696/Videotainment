@@ -1,0 +1,59 @@
+.HomeApplication .row.channel-container{
+    justify-content: center;
+    max-width: 100%;
+}
+
+.HomeApplication .ChannelItem{
+    margin: 0 0 60px 10px;
+    padding: 0 0 10px 0px;
+}
+
+.HomeApplication .ChannelItem .column-in-channels, .column-in-videos{
+    max-width: 100%;
+}
+
+.HomeApplication .ChannelItem .channel-image{
+    width: 130px;
+    height: 130px;
+}
+
+.HomeApplication .ChannelItem .card-channel{
+    margin-right: 0;
+    width: 142px;
+    height: 142px;
+}
+
+.HomeApplication .ChannelItem h3.card-title > a{
+    text-decoration: none !important;
+    transition: all .5s;
+}
+
+.HomeApplication .ChannelItem h3.card-title > a:hover{
+    transition: all .5s;
+    color: orangered;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .HomeApplication .ChannelItem{
+        min-width: 182px;
+    }
+}
+
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .HomeApplication .ChannelItem{
+        min-width: 182px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .HomeApplication .ChannelItem{
+        min-width: 182px;
+    }
+}
+
+@media screen and (max-width : 1024px) {
+    .HomeApplication .ChannelItem{
+        min-width: 182px;
+    }
+}

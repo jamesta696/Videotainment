@@ -1,0 +1,190 @@
+.HomeApplication .ws-top,
+.ResultsApplication .ws-top,
+.PlayerApplication .ws-top,
+.ChannelApplication .ws-top{
+    background: linear-gradient(135deg, rgba(7,195,252,1) 0%,rgba(23,189,239,1) 12%,rgba(0,122,204,1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(7,195,252,1) 0%,rgba(23,189,239,1) 12%,rgba(0,122,204,1) 100%);
+}
+
+.HomeApplication .ws-top a.red:link,
+.ResultsApplication .ws-top a.red:link,
+.PlayerApplication .ws-top a.red:link,
+.ChannelApplication .ws-top a.red:link{
+    color: #fff;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+}
+
+.HomeApplication .ws-top a.red:link:hover,
+.ResultsApplication .ws-top a.red:link:hover,
+.PlayerApplication .ws-top a.red:link:hover,
+.ChannelApplication .ws-top a.red:link:hover{
+    color: #2d2a28;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+}
+
+.HomeApplication .ws-top .up,
+.ResultsApplication .ws-top .up,
+.PlayerApplication .ws-top .up,
+.ChannelApplication .ws-top .up{
+    border-bottom: 0;
+}
+
+.HomeApplication .ws-top a,
+.ResultsApplication .ws-top a,
+.PlayerApplication .ws-top a,
+.ChannelApplication .ws-top a{
+    color: #fff;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+}
+
+.HomeApplication .ws-top a:hover,
+.ResultsApplication .ws-top a:hover,
+.PlayerApplication .ws-top a:hover,
+.ChannelApplication .ws-top a:hover{
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+    color: #2d2a28;
+}
+
+.HomeApplication .ws-top #navigation li:not(:first-child)::before,
+.ResultsApplication .ws-top #navigation li:not(:first-child)::before,
+.PlayerApplication .ws-top #navigation li:not(:first-child)::before,
+.ChannelApplication .ws-top #navigation li:not(:first-child)::before{
+    color: #fff;
+    font-size: 15px;
+}
+
+.HomeApplication .logo-header a img,
+.ResultsApplication .logo-header a img,
+.PlayerApplication .logo-header a img,
+.ChannelApplication .logo-header a img{
+    height: 58px;
+    width: 150px;
+    margin-top: -10px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.HomeApplication .div-footer,
+.ResultsApplication .div-footer,
+.PlayerApplication .div-footer,
+.ChannelApplication .div-footer{
+    margin: 10px auto 0 auto;
+}
+
+.HomeApplication .cl-89.text,
+.ResultsApplication .cl-89.text,
+.PlayerApplication .cl-89.text,
+.ChannelApplication .cl-89.text{
+    margin: 0 45px 0 45px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.HomeApplication .f-13.cl-89.text.footer-end,
+.ResultsApplication .f-13.cl-89.text.footer-end,
+.PlayerApplication .f-13.cl-89.text.footer-end,
+.ChannelApplication .f-13.cl-89.text.footer-end{
+    text-align: center;
+}
+
+.HomeApplication .ws-top.down,
+.ResultsApplication .ws-top.down,
+.PlayerApplication .ws-top.down,
+.ChannelApplication .ws-top.down{
+    height: 63px;
+}
+
+.ResultsApplication .pagination-div,
+.ChannelApplication .pagination-div{
+    display: none;
+}
+
+.HomeApplication .ws-footer,
+.ResultsApplication .ws-footer,
+.PlayerApplication .ws-footer,
+.ChannelApplication .ws-footer{
+    background: linear-gradient(135deg, rgba(7,195,252,1) 0%,rgba(23,189,239,1) 12%,rgba(0,122,204,1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(7,195,252,1) 0%,rgba(23,189,239,1) 12%,rgba(0,122,204,1) 100%);
+}
+
+@media screen and (max-width:575px){
+    .HomeApplication .row,
+    .ResultsApplication .row,
+    .PlayerApplication .row,
+    .ChannelApplication .row{
+        justify-content: center;
+    }
+    
+    .HomeApplication .ws-top.down,
+    .ResultsApplication .ws-top.down,
+    .PlayerApplication .ws-top.down,
+    .ChannelApplication .ws-top.down{
+        height: 80px;
+    }
+
+    .HomeApplication .logo-header a img, 
+    .ResultsApplication .logo-header a img, 
+    .PlayerApplication .logo-header a img, 
+    .ChannelApplication .logo-header a img{
+        height: 75px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+    .HomeApplication .div-footer,
+    .ResultsApplication .div-footer,
+    .PlayerApplication .div-footer,
+    .ChannelApplication .div-footer{
+        width: initial;
+    }
+
+    .HomeApplication .search-container, 
+    .ResultsApplication .search-container, 
+    .PlayerApplication .search-container, 
+    .ChannelApplication .search-container{
+        top: 5px;
+        background: inherit;
+    }   
+}
+
+@media screen and (max-width: 1399px) and (min-width: 769px) {
+    .HomeApplication .search-container,
+    .ResultsApplication .search-container,
+    .PlayerApplication .search-container,
+    .ChannelApplication .search-container{
+        background: inherit;
+        top: 5px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 768px) {
+    .HomeApplication .div-footer,
+    .ResultsApplication .div-footer,
+    .PlayerApplication .div-footer,
+    .ChannelApplication .div-footer{
+        width: initial;
+    }
+}
+

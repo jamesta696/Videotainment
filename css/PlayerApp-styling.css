@@ -1,0 +1,302 @@
+.PlayerApplication .column-video-left{
+    max-width: 100%;
+}
+
+.PlayerApplication #player{
+    min-height: 0;
+    margin: 20px 10px 0 10px;
+}
+
+.PlayerApplication .cl-45.f-14.videoDesc{
+    width: 640px;
+    white-space: pre-line;
+}
+
+.PlayerApplication .cl-45.f-14.videoDesc a {
+    color: #007acc;
+    text-decoration: none;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.PlayerApplication .cl-45.f-14.videoDesc a:hover{
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    color: orangered;
+}
+
+.PlayerApplication .VideoItem {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; 
+}
+
+.PlayerApplication .column-video-right .VideoItem .search-column-left,
+.PlayerApplication .column-video-right .VideoItem .search-column-left .placeholder-16-9-320 {
+    /* width:210px; */
+    background-color: black;
+    position: relative;
+    width: 188px;
+    height: 117px;
+}
+
+.PlayerApplication .column-video-right .VideoItem .search-column-right{
+    width: 163px;
+}
+
+.PlayerApplication .search-column-right h3.search-title{
+    font-size:inherit;
+}
+
+
+.PlayerApplication .column-video-right .VideoItem .search-column-right .search-title a{
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: inherit;
+    transition: all .5s;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently */
+}
+
+.PlayerApplication .column-video-right .VideoItem .search-column-right .search-title a:hover{
+    transition: all .5s;
+    color: orangered;
+}
+
+.PlayerApplication .column-video-right .search-column-right .search-subtitle a{
+    color: #007acc;
+    font-size: 15px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    display: inline-block;
+    padding: 0;
+    white-space: normal;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently */
+}
+
+.PlayerApplication .column-video-right .search-column-right .search-subtitle a:hover{
+    color: orangered;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.PlayerApplication .column-video-right .VideoItem .row.row-search{
+    margin-bottom: 20px !important;
+    justify-content: center;
+}
+
+.PlayerApplication .column-video-right .line-clamp-2-search{
+    max-height: 67px;
+}
+
+.PlayerApplication .column-video-right .search-views{
+    margin-bottom: 0;
+}
+
+.PlayerApplication .column-video-right .line-clamp-3{
+    display: block;
+}
+
+.PlayerApplication .column-video-right .search-desc{
+    font-size: 13px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+}
+
+.PlayerApplication .column-video-left .cl-666{
+    color: #007acc;
+}
+
+.PlayerApplication .row .image-round{
+    transition: transform .5s ease-in-out;
+    -webkit-transition: transform .5s ease-in-out;
+    -moz-transition: transform .5s ease-in-out;
+    -o-transition: transform .5s ease-in-out;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently */
+}
+
+.PlayerApplication .row .image-round:hover{
+    transform: rotate(720deg);
+    -webkit-transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+    -o-transform: rotate(720deg);
+    -ms-transform: rotate(720deg);
+}
+
+.PlayerApplication .f-18.videoTags {
+    color: #454545;
+}
+
+.PlayerApplication .videoTags a {
+    color: #007acc;
+    text-decoration: none;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+}
+
+.PlayerApplication .videoTags a:hover,
+.PlayerApplication .videoTags a:focus{
+    color: orangered;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+}
+
+@media screen and (min-width: 300px) and (max-width: 380px) {
+    .PlayerApplication .column-video-right .line-clamp-3{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .PlayerApplication .VideoItem .search-column-left a img{
+        height: 117px;
+    }
+    .PlayerApplication .column-video-right{
+        display: flex;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:360px){
+    .PlayerApplication .cl-45.f-14.videoDesc{
+        width: 320px;
+        overflow-wrap: break-word;  
+    }
+
+    .PlayerApplication #player{
+        margin: 50px 10px 0 10px;
+    }
+
+    .PlayerApplication .divider-column-videos, 
+    .divider-column-channels{
+        width: auto;
+        border-bottom: 1px solid #ececec;
+    }
+
+    .PlayerApplication #disqus_thread{
+        padding-top: 0;
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 575px){
+    .PlayerApplication #player{
+        margin: 50px 10px 0 10px;
+    }
+
+    .PlayerApplication .cl-45.f-14.videoDesc{
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: normal;
+        line-break: strict;
+        hyphens: none;
+        -webkit-hyphens: none;
+        -moz-hyphens: none;
+        max-width: 100%;
+        width:auto;
+    }
+    
+    .PlayerApplication a.channel-link{
+        width: -webkit-fill-available;
+        max-width: 120px;
+    }
+
+    .PlayerApplication .divider-column-videos, 
+    .divider-column-channels{
+        width: auto;
+        border-bottom: 1px solid #ececec;
+    }
+
+    .PlayerApplication #disqus_thread{
+        padding-top: 0;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .PlayerApplication .cl-45.f-14.videoDesc{
+        width: 640px;
+        max-width:88%;
+    }
+
+    .PlayerApplication .container{
+        width:100%;
+    }
+
+    .PlayerApplication .column-video-right .VideoItem .search-column-right{
+        width: calc(100% - 238px);
+    }
+
+    .PlayerApplication .divider-column-videos, 
+    .divider-column-channels{
+        width: auto;
+    }
+
+    .PlayerApplication #disqus_thread{
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .PlayerApplication .column-video-right .VideoItem .search-column-right{
+        width: calc(100% - 350px);
+    }
+
+    .PlayerApplication #disqus_thread{
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    .PlayerApplication .column-video-right .search-desc{
+        display: none;
+    }
+
+    .PlayerApplication .divider-column-videos, 
+    .divider-column-channels{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 768px) {
+    .PlayerApplication #player{
+        margin: 0px 10px 0 0;
+    }
+
+    .PlayerApplication .cl-45.f-14.videoDesc{
+        width: 640px;
+    }
+}

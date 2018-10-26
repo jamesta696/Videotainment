@@ -1,0 +1,182 @@
+.ChannelApplication h2.channel{
+    overflow-wrap: break-word;
+}
+
+.ChannelApplication .VideoItem{
+    flex: 1;
+    max-width: 220px;
+}
+
+.ChannelApplication .buffer-50{
+    margin-top:50px;
+}
+
+.ChannelApplication .channel-section .channel-page-title-etc{
+    margin-top: 15px;
+    position: relative;
+    top: 235px;
+}
+
+.ChannelApplication .channel-section .image-channel{
+    margin-top: 15px;
+    position: relative;
+    top: 187px;
+}
+
+.ChannelApplication .channel-section .channel-banner{
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-size: 100% auto;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 30px;
+    box-shadow: 0px 15px 50px -1px rgba(0,0,0,0.12)
+}
+
+.ChannelApplication .row{
+    justify-content: center;
+}
+
+.ChannelApplication .row-1190{
+    margin-top: 220px;
+}
+
+.ChannelApplication .VideoItem .search-column-left,
+.ChannelApplication .VideoItem .search-column-left .placeholder-16-9-320 {
+    /* width:210px; */
+    background-color: black;
+    position: relative;
+    width: 188px;
+    height: 117px;
+}
+
+.ChannelApplication .VideoItem .search-column-right .search-subtitle a{
+    color: #007acc;
+    font-size: 15px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+    display: inline-block;
+    padding: 0;
+}
+
+.ChannelApplication .VideoItem .search-column-right .search-subtitle a:hover{
+    color: orangered;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+}
+
+.ChannelApplication .VideoItem .search-column-left .placeholder-16-9-320 .img-in-placeholder a img{
+    height: 117px !important;
+}
+
+.ChannelApplication .VideoItem .search-column-right{
+    width: 200px;
+}
+
+.ChannelApplication .search-column-right h3.search-title{
+    width: 182px;
+}
+
+.ChannelApplication .search-column-right .search-title a{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    transition: all .5s;    
+}
+
+.ChannelApplication .search-column-right .search-title a:hover{
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+    color: orangered;
+}
+
+.ChannelApplication .VideoItem .search-column-right .search-desc.line-clamp-3{
+    max-height: 60px;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 575px){
+    .ChannelApplication .channel-section .image-channel{
+        top: 100px;
+    }
+
+    .ChannelApplication .channel-section .channel-page-title-etc{
+        top: 100px;
+    }
+
+    .ChannelApplication .row-1190 {
+        margin-top: 100px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:575px) and (min-width:300px){
+    .ChannelApplication .channel-section .image-channel{
+        width: 50px;
+        height: 50px;
+    }
+
+    .ChannelApplication h2.channel{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 780px) and (min-width: 576px) {
+    .ChannelApplication .channel-section .image-channel{
+        top: 100px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .ChannelApplication h2.channel{
+        margin-top:25px;
+        font-size: 25px;
+    }
+
+    .ChannelApplication .channel-section .channel-page-title-etc{
+        top: 125px;
+    }
+
+    .ChannelApplication .row-1190 {
+        margin-top: 125px;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    .ChannelApplication .channel-section .image-channel{
+        top:150px;
+    }
+
+    .ChannelApplication .channel-section .channel-page-title-etc{
+        top: 195px;
+    }
+
+    .ChannelApplication .row-1190 {
+        margin-top: 195px;
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1201px) {
+    .ChannelApplication .channel-section .image-channel{
+        top:200px;
+    }
+
+    .ChannelApplication .channel-section .channel-page-title-etc{
+        top: 280px;
+    }
+
+    .ChannelApplication .row-1190 {
+        margin-top: 285px;
+    }
+}
