@@ -10,12 +10,17 @@ class PlayerApplication extends Application{
 		this.videoInfoContainer = this.element.querySelector(".mobile-padding");
 		this.playerContainer = this.element.querySelector("#player");
 		this.playerContainer.innerHTML = "";
+		this.titleDiv = this.element.querySelector(".f-22");
+		this.viewCount = this.element.querySelector(".f-17");
+		this.channelTitle = this.element.querySelector(".f-18");
+		this.channelThumbNail = this.element.querySelector(".image-round");
+		this.channelLink = this.element.querySelector(".channel-link");
+		this.videoDescription = this.element.querySelector(".videoDesc");
+		this.videoTags = this.element.querySelector(".videoTags");
 		this.relatedVideosContainer = this.element.querySelector(".column-video-right");
 		this.relatedVideosContainer.innerHTML = "";
 		const video = new VideoPlayer();
 		this.playerContainer.appendChild(video.element);
-		this.channelLink = this.element.querySelector(".channel-link");
-		this.videoDescription = this.element.querySelector(".videoDesc");
 	}
 
 	onApiLoaded(){
@@ -39,17 +44,12 @@ class PlayerApplication extends Application{
 	onPopulateVideoInfo(res){
 		this.videoTitleTab.innerHTML = `${res.items[0].snippet.title} | Videotainment`;
 		this.videoDescription.innerHTML = res.items[0].snippet.description;
+		this.titleDiv.innerHTML = res.items[0].snippet.title;
+		this.channelTitle.innerHTML = res.items[0].snippet.channelTitle;
 
-		const titleDiv = this.element.querySelector(".f-22");
-			  titleDiv.innerHTML = res.items[0].snippet.title;
-
-		let viewCount = this.element.querySelector(".f-17");
-			viewCount = (res.items[0].statistics.viewCount == undefined) ? viewCount.innerHTML = "" : 
-			viewCount.innerHTML = res.items[0].statistics.viewCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " views";
+		this.viewCount = (res.items[0].statistics.viewCount == undefined) ? this.viewCount.innerHTML = "" : 
+		this.viewCount.innerHTML = res.items[0].statistics.viewCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " views";
 			
-		const channelTitle = this.element.querySelector(".f-18");
-			  channelTitle.innerHTML = res.items[0].snippet.channelTitle;
-
 		this.onChannelInfo(res);
 		this.onFormatLinks(res);
 		this.onFormatVideoTags(res);
@@ -69,13 +69,13 @@ class PlayerApplication extends Application{
 	}
 
 	onFormatVideoTags(res){
-		let videoTags = this.element.querySelector(".videoTags");
 		let tagLinks = "";	
 		for (let i in res.items[0].snippet.tags){
 			tagLinks = tagLinks + `<a href="/results.html?keyword=${res.items[0].snippet.tags[i]}">${res.items[0].snippet.tags[i]}</a>, `;
 		}
-			videoTags = (res.items[0].snippet.tags == undefined) ? videoTags.innerHTML = "" : 
-			videoTags.innerHTML = tagLinks;
+
+		this.videoTags = (res.items[0].snippet.tags == undefined) ? this.videoTags.innerHTML = "" : 
+		this.videoTags.innerHTML = tagLinks;
 	}
 
 	onChannelInfo(res){
@@ -86,8 +86,7 @@ class PlayerApplication extends Application{
 		request.execute(response => {
 			const results = response.result;
 			console.log(results);
-			let channelThumbNail = this.element.querySelector(".image-round");
-			channelThumbNail.setAttribute("src", results.items[0].snippet.thumbnails.high.url);
+			this.channelThumbNail.setAttribute("src", results.items[0].snippet.thumbnails.high.url);
 			this.channelLink.href = `/channel.html?id=${results.items[0].id}`;
 		});	
 	}

@@ -13,11 +13,11 @@ class ChannelApplication extends Application{
         this.channelName = this.element.querySelector(".channel");
         this.channelName.innerHTML = "";
         this.channelBanner = this.element.querySelector(".channel-banner");
+        this.channelVideoCount = this.element.querySelector(".subtitle-channel");
     }
 
     onApiLoaded(e){
         super.onApiLoaded();
-        this.videoCount = this.element.querySelector(".subtitle-channel");
         this.onGetChannelDetailsRequest();
     }
 
@@ -38,8 +38,8 @@ class ChannelApplication extends Application{
         this.channelTitle.innerHTML = `Channel - ${results.items[0].brandingSettings.channel.title} | Videotainment`;
         this.channelBanner.src = results.items[0].brandingSettings.image.bannerTabletExtraHdImageUrl;
         this.thumbNailContainer.src = results.items[0].snippet.thumbnails.high.url;
-        this.channelName.innerHTML =  results.items[0].snippet.title;
-        this.videoCount.innerHTML =   results.items[0].statistics.videoCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Videos";
+        this.channelName.innerHTML = results.items[0].snippet.title;
+        this.channelVideoCount.innerHTML = results.items[0].statistics.videoCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Videos";
     }
 
     onGetChannelPlaylistVideosRequest(results){
