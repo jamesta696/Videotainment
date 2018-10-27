@@ -17,6 +17,7 @@ class HomeApplication extends Application {
 		this.channelContainer.innerHTML = "";
 	}
 	
+	//After Data API is loaded, run these functions
 	onApiLoaded(e){
 		super.onApiLoaded();	
 		this.onGetPopularVideos();
@@ -25,6 +26,7 @@ class HomeApplication extends Application {
 		this.onSearchChannelsList();
 	}
 
+	// Videos list API call to get the most trending latest videos and create them followed by this.onCreatePopularVideos();
 	onGetPopularVideos(){
 		const request = gapi.client.youtube.videos.list({
 			chart: "mostPopular",
@@ -50,6 +52,7 @@ class HomeApplication extends Application {
 		}
 	}
 
+	// Videos list API call to get the most trending latest videos related to Autos and Vehicles and create them - this.onCreateAutosandVehiclesVideos();
 	onGetAutosandVehiclesVideos(){
 		const request = gapi.client.youtube.videos.list({
 			chart: "mostPopular",
@@ -75,6 +78,7 @@ class HomeApplication extends Application {
 		}
 	}
 
+	// Videos list API call to get the most trending latest videos related to Gaming and create them - this.onCreateGamingVideos();
 	onGetGamingVideos(){
 		const request = gapi.client.youtube.videos.list({
 			chart: "mostPopular",
@@ -100,6 +104,7 @@ class HomeApplication extends Application {
 		}
 	}
 
+	// Search list API call to get channels upon rating and inject them into the specified HTML element container - this.onCreateChannels();
 	onSearchChannelsList(){
 		const request = gapi.client.youtube.search.list({
 			part: "snippet",
@@ -111,11 +116,11 @@ class HomeApplication extends Application {
 		request.execute(response => {
 			const results = response.result;
 			console.log(results);
-			this.onGetChannelsList(results.items);
+			this.onCreateChannels(results.items);
 		});		
 	}
 
-	onGetChannelsList(items){
+	onCreateChannels(items){
 		for(let item of items){
 			let channel = new ChannelItem(item);
 				channel.id = item.id.channelId;

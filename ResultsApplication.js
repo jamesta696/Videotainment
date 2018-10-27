@@ -11,11 +11,14 @@ class ResultsApplication extends Application{
 		this.container.innerHTML = "";
 	}
 
+	// After Data API is loaded, call these functions
 	onApiLoaded(e){
 		super.onApiLoaded();
 		this.onRequestResults(e)
 	}
 
+	// Search list API call to get results based on search string & then inject those video items into the specified HTML element container
+	// this.onCreateResultsVideos();
 	onRequestResults(e){
 		const request = gapi.client.youtube.search.list({
             part: "snippet",

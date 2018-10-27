@@ -16,11 +16,13 @@ class ChannelApplication extends Application{
         this.channelVideoCount = this.element.querySelector(".subtitle-channel");
     }
 
+    // After Data API is loaded, call these functions
     onApiLoaded(e){
         super.onApiLoaded();
         this.onGetChannelDetailsRequest();
     }
 
+    // Channels list API call to retrieve all necessary data from specific channel based on channel ID
     onGetChannelDetailsRequest(){
         const request = gapi.client.youtube.channels.list({
 			id: this.id,
@@ -34,6 +36,7 @@ class ChannelApplication extends Application{
         });
     }
 
+    // Set channel title tab, name, thumbnail, banner & total video count injected into specified HTML element containers
     onSetChannelDetails(results){
         this.channelTitle.innerHTML = `Channel - ${results.items[0].brandingSettings.channel.title} | Videotainment`;
         this.channelBanner.src = results.items[0].brandingSettings.image.bannerTabletExtraHdImageUrl;
@@ -42,6 +45,7 @@ class ChannelApplication extends Application{
         this.channelVideoCount.innerHTML = results.items[0].statistics.videoCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Videos";
     }
 
+    // Playlist API call to retrieve videos of the channel page a user is viewing and them create the videos - this.onCreateChannelPlaylistVideos();
     onGetChannelPlaylistVideosRequest(results){
         const request = gapi.client.youtube.playlistItems.list({
             maxResults: 20,

@@ -45,7 +45,6 @@
 
 .ChannelApplication .VideoItem .search-column-left,
 .ChannelApplication .VideoItem .search-column-left .placeholder-16-9-320 {
-    /* width:210px; */
     background-color: black;
     position: relative;
     width: 188px;

@@ -23,12 +23,14 @@ class PlayerApplication extends Application{
 		this.playerContainer.appendChild(video.element);
 	}
 
+	// After Data API is loaded, call these functions
 	onApiLoaded(){
 		super.onApiLoaded();
 		this.onCreateVideoDetailsRequest();
 		this.onGetRelatedVideos();
 	}
 
+	// Videos list API call to retrieve all the necessary data from current video on player page
 	onCreateVideoDetailsRequest(){
 		const request = gapi.client.youtube.videos.list({
 			id: this.id,
@@ -41,6 +43,7 @@ class PlayerApplication extends Application{
 		});	
 	}
 
+	// Inject the necessary video data into the following elements (title, description, video tags..etc)
 	onPopulateVideoInfo(res){
 		this.videoTitleTab.innerHTML = `${res.items[0].snippet.title} | Videotainment`;
 		this.videoDescription.innerHTML = res.items[0].snippet.description;
@@ -55,6 +58,7 @@ class PlayerApplication extends Application{
 		this.onFormatVideoTags(res);
 	}
 
+	// Detects any text in video descriptions that contains "http(s)/www" and turns them into true links
 	onFormatLinks(res){
 		//URLs starting with http://, https://, or ftp://
 		const replacePattern1 = /(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gim;
@@ -68,6 +72,7 @@ class PlayerApplication extends Application{
 		}
 	}
 
+	// Grab video tags from the API call and wrap them into links with a search from specific tag clicked
 	onFormatVideoTags(res){
 		let tagLinks = "";	
 		for (let i in res.items[0].snippet.tags){
@@ -78,6 +83,7 @@ class PlayerApplication extends Application{
 		this.videoTags.innerHTML = tagLinks;
 	}
 
+	// Channels list API call to set channel thumbnail and link
 	onChannelInfo(res){
 		const request = gapi.client.youtube.channels.list({
 			id: res.items[0].snippet.channelId,
@@ -91,6 +97,7 @@ class PlayerApplication extends Application{
 		});	
 	}
 
+	// Search API call to retrieve related videos to current video and create them followed by onPopulateRelatedVideos();
 	onGetRelatedVideos(){
 		const request = gapi.client.youtube.search.list({
             part: "snippet",

@@ -7,7 +7,7 @@ class Application {
 		
 	}
 	onLoad(e){
-		const searchComponent = document.querySelector(".search-container");
+		const searchComponent = this.element.querySelector(".search-container");
 		this.searchBar = new SearchBar(searchComponent);
 	}
 
@@ -15,6 +15,7 @@ class Application {
 		//console.log("ApiLoaded fired. Override this in subclasses to handle youtube requests.")
 	}
 
+	// YouTube Data API initializer, please see configs folder (config.js) to input API key to test this application
 	init(){
 		gapi.client.setApiKey(Config.KEY);
 		gapi.client.load("youtube", "v3", () => {

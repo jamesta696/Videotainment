@@ -39,7 +39,6 @@
 
 .PlayerApplication .column-video-right .VideoItem .search-column-left,
 .PlayerApplication .column-video-right .VideoItem .search-column-left .placeholder-16-9-320 {
-    /* width:210px; */
     background-color: black;
     position: relative;
     width: 188px;

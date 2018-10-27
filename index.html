@@ -1,162 +1,153 @@
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
+<html>
+<head>
 
-  <title>Videotainment - Videos on Demand</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
 
-  <link rel="stylesheet" href="index_files/bundle.css">
-  <link rel="stylesheet" type="text/css" href="index_files/css.css">
-  <link rel="stylesheet" href="index_files/font-awesome.css">
-  <link href="favicon.jpg" type="image/x-icon" rel="icon">
-  <link href="favicon.jpg" type="image/x-icon" rel="shortcut icon">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <link href="css/HomeApp-styling.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="configs/config.js"></script>
-  <script src="utils/utils.js"></script>
-  <script src="utils/strings.js"></script>
-  <script src="components/SearchBar.js"></script>
-  <script src="components/VideoItem.js"></script>
-  <script src="components/ChannelItem.js"></script>
-  <script src="Application.js"></script>
-  <script src="HomeApplication.js"></script>
-  <script>new HomeApplication(document)</script>
-  <script src="https://apis.google.com/js/client.js?onload=init"></script>
+    <title>Videotainment - Videos on Demand</title>
+
+    <link rel="stylesheet" href="index_files/bundle.css">
+    <link rel="stylesheet" type="text/css" href="index_files/css.css">
+    <link rel="stylesheet" href="index_files/font-awesome.css">
+    <link href="favicon.jpg" type="image/x-icon" rel="icon">
+    <link href="favicon.jpg" type="image/x-icon" rel="shortcut icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="css/HomeApp-styling.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="configs/config.js"></script>
+    <script src="utils/utils.js"></script>
+    <script src="utils/strings.js"></script>
+    <script src="components/SearchBar.js"></script>
+    <script src="components/VideoItem.js"></script>
+    <script src="components/ChannelItem.js"></script>
+    <script src="Application.js"></script>
+    <script src="HomeApplication.js"></script>
+    <script>new HomeApplication(document)</script>
+    <script src="https://apis.google.com/js/client.js?onload=init"></script>
 </head>
 <body class="HomeApplication">
-<div class="ws-top">
-  <div class="ws-top up">
-    <div class="container-flat" id="navigation">
-      <div class="row header-row" style="margin-top:2px;">
-        <div class="links-top-left va-40">
-          <ul>
-                <li><a href="JavaScript:void(0);">Link 1</a></li>
-                <li><a href="JavaScript:void(0);">Link 2</a></li>
-                <li><a href="JavaScript:void(0);">Link 3</a></li>
-                <li><a href="JavaScript:void(0);">Link 4</a></li>
-          </ul>
-        </div>
+    <div class="ws-top">
+        <div class="ws-top up">
+            <div class="container-flat" id="navigation">
+                <div class="row header-row" style="margin-top:2px;">
+                    <div class="links-top-left va-40">
+                        <ul>
+                            <li><a href="JavaScript:void(0);">Link 1</a></li>
+                            <li><a href="JavaScript:void(0);">Link 2</a></li>
+                            <li><a href="JavaScript:void(0);">Link 3</a></li>
+                            <li><a href="JavaScript:void(0);">Link 4</a></li>
+                        </ul>
+                    </div>
 
-        <div class="align-right va-40">
-          <ul class="login">
-              <li class="wht fw-700"><a href="JavaScript:void(0);" class="wht">LOG IN</a></li>
-              <li class="red fw-700"><a href="JavaScript:void(0);" class="red">SIGN UP</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ws-top down">
-    <div class="container-flat">
-      <div class="row header-row">
-        <div class="logo-header">
-          <a href="/index.html"><img src="logo_transparent.png" class="header-logo"></a>
-        </div>
-        
-        <div class="header-right align-right">
-          <form action="/search">
-            <div class="search-container">
-              <button class="searchBtn" type="submit"><i class="fas fa-search f002"></i></button>
-              <input placeholder="Search.." name="query" type="text" id="searchField">
+                    <div class="align-right va-40">
+                        <ul class="login">
+                            <li class="wht fw-700"><a href="JavaScript:void(0);" class="wht">LOG IN</a></li>
+                            <li class="red fw-700"><a href="JavaScript:void(0);" class="red">SIGN UP</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </form>
         </div>
-      </div>
+
+        <div class="ws-top down">
+            <div class="container-flat">
+                <div class="row header-row">
+                    <div class="logo-header">
+                        <a href="/index.html"><img src="logo_transparent.png" class="header-logo"></a>
+                    </div>
+                    
+                    <div class="header-right align-right">
+                        <form action="/search">
+                            <div class="search-container">
+                                <button class="searchBtn" type="submit"><i class="fas fa-search f002"></i></button>
+                                <input placeholder="Search.." name="query" type="text" id="searchField">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 
-</div>
-
-<div class="container">
-<div class="row buffer-50 buffer-30-mobile"></div>
-
-    <div class="row row-1175">
-        <div class="column-videos-home">
-
-            <div class="row-section-videos">
+    <div class="container">
+        <div class="row buffer-50 buffer-30-mobile"></div>
+        <div class="row row-1175">
+            <div class="column-videos-home">
+                <div class="row-section-videos">
                     <div class="section-title">
                         <h3 class="f-18 va-40 fw-600">Most Popular: Autos &amp; Vehicles</h3>
                     </div>
                     <div class="align-right f-14 fw-600"><a class="azure" href="JavaScript:void(0);">MORE »</a></div>
-            </div>
-            <div class="buffer-10 no-buffer-mobile"></div>
-            <div class="row autos-vehicles">
-            
-            </div>
+                </div>
+                <div class="buffer-10 no-buffer-mobile"></div>
 
-            <div class="row">
-                <div class="divider-column-videos"></div>
-            </div>
+                <div class="row autos-vehicles"></div>
 
-            <div class="row-section-videos">
+                <div class="row">
+                    <div class="divider-column-videos"></div>
+                </div>
+
+                <div class="row-section-videos">
                     <div class="section-title">
                         <h3 class="f-18 va-40 fw-600">Top Videos</h3>
                     </div>
                     <div class="align-right f-14 fw-600"><a class="azure" href="JavaScript:void(0);">MORE »</a></div>
-            </div>
-            <div class="buffer-10 no-buffer-mobile"></div>
-            <div class="row popular-container">
-                
-            </div>
-
-            <div class="row">
-                <div class="divider-column-videos"></div>
-            </div>
-
-            <div class="row-section-videos">
-                <div class="section-title">
-                    <h3 class="f-18 va-40 fw-600">Most Popular: Gaming</h3>
                 </div>
-                <div class="align-right f-14 fw-600"><a class="azure" href="JavaScript:void(0);">MORE »</a></div>
-            </div>
-            <div class="buffer-10 no-buffer-mobile"></div>
-            <div class="row gaming">
-                
-            </div>
+                <div class="buffer-10 no-buffer-mobile"></div>
 
-            <div class="row">
-                <div class="divider-column-videos"></div>
-            </div>
-        </div>
+                <div class="row popular-container"></div>
 
+                <div class="row">
+                    <div class="divider-column-videos"></div>
+                </div>
 
-        <div class="column-channels-home">
+                <div class="row-section-videos">
+                    <div class="section-title">
+                        <h3 class="f-18 va-40 fw-600">Most Popular: Gaming</h3>
+                    </div>
+                    <div class="align-right f-14 fw-600"><a class="azure" href="JavaScript:void(0);">MORE »</a></div>
+                </div>
+                <div class="buffer-10 no-buffer-mobile"></div>
 
-            <div class="row-section-small">
-                <div class="card-channel">
-                    <h3 class="f-18 va-40 fw-600">Popular Channels</h3>
+                <div class="row gaming"></div>
+
+                <div class="row">
+                    <div class="divider-column-videos"></div>
                 </div>
             </div>
-            <div class="row buffer-10 no-buffer-mobile"></div>
-            <div class="row channel-container">
 
-            </div>
+            <div class="column-channels-home">
+                <div class="row-section-small">
+                    <div class="card-channel">
+                        <h3 class="f-18 va-40 fw-600">Popular Channels</h3>
+                    </div>
+                </div>
+                <div class="row buffer-10 no-buffer-mobile"></div>
 
-            <div class="row">
-                <div class="divider-column-channels"></div>
-            </div>
+                <div class="row channel-container"></div>
 
-        </div>
-    </div>
-</div>
-
-<div class="ws-footer">
-    <div class="container-flat">
-
-        <div class="row">
-            <div class="div-footer">
-                <div class="buffer-50 no-buffer-mobile"></div>
-                <img class="footer-logo" src="logo_transparent.png" width="350px">
-                <div class="buffer-20 no-buffer-mobile"></div>
-                <p class="f-13 cl-89 text">Videotainment © 2018 All Rights Reserved.</p>
-                <p class="f-13 cl-89 text footer-end">Powered By The YouTube Data API V3</p>
+                <div class="row">
+                    <div class="divider-column-channels"></div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+    <div class="ws-footer">
+        <div class="container-flat">
+            <div class="row">
+                <div class="div-footer">
+                    <div class="buffer-50 no-buffer-mobile"></div>
+                    <img class="footer-logo" src="logo_transparent.png" width="350px">
+                    <div class="buffer-20 no-buffer-mobile"></div>
+                    <p class="f-13 cl-89 text">Videotainment © 2018 All Rights Reserved.</p>
+                    <p class="f-13 cl-89 text footer-end">Powered By The YouTube Data API V3</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
