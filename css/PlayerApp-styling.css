@@ -288,6 +288,10 @@
     .divider-column-channels{
         width: auto;
     }
+
+    .PlayerApplication .column-video-right .VideoItem .row.row-search{
+        justify-content: flex-start;
+    }
 }
 
 @media screen and (max-width: 1400px) and (min-width: 768px) {
