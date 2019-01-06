@@ -1,3 +1,3 @@
 Config = {
-    KEY: ""
+    KEY: "AIzaSyBdEbmTsHFVaWrRfQdvqJ49n_hM4sdwnbY"
 };
