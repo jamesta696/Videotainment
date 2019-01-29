@@ -1,9 +1,9 @@
-.ResultsApplication .search-results{
+.ResultsApplication .search-results {
     display: none;
 }
 
-.ResultsApplication .search-column-right .search-subtitle a{
-    transition: all .5s;
+.ResultsApplication .search-column-right .search-subtitle a {
+    transition: all 0.5s;
     font-size: 17px;
     color: #007acc;
     display: inline-block;
@@ -11,37 +11,38 @@
     overflow: inherit;
 }
 
-.ResultsApplication .search-column-right .search-subtitle a:hover{
+.ResultsApplication .search-column-right .search-subtitle a:hover {
     color: orangered;
-    transition: all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    -ms-transition: all .5s;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
 }
-.ResultsApplication .search-column-right h3.search-title a{
-    transition: all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    -ms-transition: all .5s;
+.ResultsApplication .search-column-right h3.search-title a {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    font-weight: 600;
 }
 
-.ResultsApplication .search-column-right h3.search-title a:hover{
+.ResultsApplication .search-column-right h3.search-title a:hover {
     color: orangered;
-    transition: all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    -ms-transition: all .5s;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
 }
 
-.ResultsApplication .line-clamp-3{
+.ResultsApplication .line-clamp-3 {
     overflow: inherit;
 }
 
-@media screen and (max-width: 575px){
-    .ResultsApplication .column-search-left{
+@media screen and (max-width: 575px) {
+    .ResultsApplication .column-search-left {
         margin-top: 20px;
     }
 }
